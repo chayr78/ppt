@@ -1,37 +1,105 @@
-#piedra{
-    height: 200px;
-    width: 200px;
-    border: solid;
-    background-color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#papel{
-    height: 200px;
-    width: 200px;
-    border: solid;
-    background-color: white;
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-#tijeras{
-    height: 200px;
-    width: 200px;
-    border: solid;
-    background-color: white;
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
 }
-H1{
-    font-style: italic;
-    font-size: 100px;
-    
+
+.header h1 {
+    color: white;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 10px;
 }
-label{
-font-style: normal;
-font-size: 150px;
-color: red;
-    margin-top: -700px;
-    margin-left: initial;
+
+.header p {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
 }
-body{
-    background-color: beige;
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
-#pib{
-width: 200px;
-height: 200px;    
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 20px;
+    width: 260px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.card h3 {
+    color: white;
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.resultado-box {
+    margin-top: 40px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.resultado-box h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+#resultado {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: bold;
+    color: #22c55e;
+}
+
+/* Responsive para celular */
+@media (max-width: 768px) {
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .card img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .header p {
+        padding: 0 15px;
+    }
 }
