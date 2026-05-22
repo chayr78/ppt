@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra,Papel o tijera</title>
+    <title>Piedra, Papel o Tijera</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
-    <H1>Bienvenido al juego de piedra papel o tijera</H1>
-    <h2>Para jugar selecciona tu figura por favor</h2>
-    <img id="piedra" src="piedra.PNG" onclick="jugar('piedra')" >
-    <img id="papel"src="papel.PNG" onclick="jugar('papel')" >
-    <img id ="tijeras" src="tijeras.PNG" onclick="jugar('tijeras')">
-    <label id="resultado">  </label>
-    <img id ="pib" src="pibble.57 PM.orer">
+
+    <div class="contenedor">
+
+        <div class="header">
+            <h1>Piedra, Papel o Tijera</h1>
+            <p>Selecciona una opción para comenzar a jugar</p>
+        </div>
+
+        <div class="opciones">
+
+            <div class="card" onclick="jugar('piedra')">
+                <img id="piedra" src="piedra.PNG" alt="Piedra">
+                <h3>Piedra</h3>
+            </div>
+
+            <div class="card" onclick="jugar('papel')">
+                <img id="papel" src="papel.PNG" alt="Papel">
+                <h3>Papel</h3>
+            </div>
+
+            <div class="card" onclick="jugar('tijeras')">
+                <img id="tijeras" src="tijeras.PNG" alt="Tijeras">
+                <h3>Tijeras</h3>
+            </div>
+
+        </div>
+
+        <div class="resultado-box">
+            <h2>Resultado</h2>
+            <label id="resultado">
+                Elige una opción
+            </label>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
-<script src="script.js"></script>
+
 </html>
