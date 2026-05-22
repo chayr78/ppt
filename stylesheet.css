@@ -1,0 +1,37 @@
+#piedra{
+    height: 200px;
+    width: 200px;
+    border: solid;
+    background-color: white;
+}
+#papel{
+    height: 200px;
+    width: 200px;
+    border: solid;
+    background-color: white;
+}
+#tijeras{
+    height: 200px;
+    width: 200px;
+    border: solid;
+    background-color: white;
+}
+H1{
+    font-style: italic;
+    font-size: 100px;
+    
+}
+label{
+font-style: normal;
+font-size: 150px;
+color: red;
+    margin-top: -700px;
+    margin-left: initial;
+}
+body{
+    background-color: beige;
+}
+#pib{
+width: 200px;
+height: 200px;    
+}
